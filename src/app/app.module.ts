@@ -30,7 +30,7 @@ import { ContactComponent } from './contact/contact.component';
 
 import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
-import { LeadersService } from './services/leaders.service';
+import { LeaderService } from './services/leader.service';
 import { LoginComponent } from './login/login.component';
 
 @NgModule({
@@ -67,7 +67,7 @@ import { LoginComponent } from './login/login.component';
   providers: [
       DishService,
       PromotionService,
-      LeadersService
+      LeaderService
   ],
   entryComponents: [
         LoginComponent
