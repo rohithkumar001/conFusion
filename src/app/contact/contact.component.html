@@ -81,4 +81,23 @@
          [disabled]="feedbackForm.invalid">Submit</button>
       </form>
     </div>
+    <div fxFlex  *ngIf="visibility">
+    <h4>Submitting Form</h4>
+    <mat-spinner></mat-spinner>
+  </div>
+  <div fxFlex *ngIf="feedbackcopy" [@expand]>
+    <h3>Your Submission</h3>
+    <p>First Name: {{feedbackcopy.firstname}}</p>
+    <p>Last Name: {{feedbackcopy.lastname}}</p>
+    <p>Tes. Number: {{feedbackcopy.telnum}}</p>
+    <p>Email: {{feedbackcopy.email}}</p>
+    <p>Contatc You?: {{feedbackcopy.agree}}</p>
+    <p>How?: {{feedbackcopy.contacttype}}</p>
+    <p>Feedback: {{feedbackcopy.message}}</p>
+  </div>
+
+  <div fxFlex *ngIf="errMess">
+    <h2>Error</h2>
+    <h4>{{errMess}}</h4>
+  </div>
 </div>

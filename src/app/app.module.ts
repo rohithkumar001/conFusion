@@ -18,7 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
-
+import { RestangularModule, Restangular } from 'ngx-restangular';
 import 'hammerjs';
 import { baseURL } from './shared/baseurl';
 
@@ -72,7 +72,10 @@ import { HighlightDirective } from './directives/highlight.directive';
     MatProgressSpinnerModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    // Importing RestangularModule and making default configs for restanglar
+    RestangularModule
+
   ],
   providers: [
       DishService,
